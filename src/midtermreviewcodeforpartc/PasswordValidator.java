@@ -60,8 +60,7 @@ class PasswordValidator extends User{
                 else
                     spec++;
             }
-            if(num >= minNum && let >= minLet && spec >= minSpec)
-                return true;
+            return num >= minNum && let >= minLet && spec >= minSpec;
         }
         return false;
     }
